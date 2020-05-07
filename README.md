@@ -3,8 +3,8 @@ After this tutorial you can create elf files. Tutorial takes 10 minutes
 
 # Install
 To deal with binary files you have to
-..*```sudo apt-get install xxd```
-..*```sudo apt-get install readelf```
+* ```sudo apt-get install xxd```
+* ```sudo apt-get install readelf```
 
 # Try asm
 Let's try to make an elf file from the asm
@@ -35,7 +35,7 @@ Me get ELF ams.out file. Let's see it with ```xxd asm.out```.
 It is very big and has a lot of usless stuf. We can rid of it with sstrip. To do it, in the asm.out repository do:
 1. ```git clone https://github.com/BR903/ELFkickers.git```
 2. ```cd ELFkickers/sstrip```
-3. ```make````
+3. ```make```
 4. ```./sstrip ../.../asm.out```
 5. ```cd ../../```
 
@@ -48,13 +48,13 @@ The green area it is the ELF header. So, to build programs if ELF format all we 
 To analyse headers run: ```readelf -h asm.out```
 We get text like this:
 ![table.png](OptimizationPictures/table.png)
-..*
-..*
-..*
-..*
-..*
-..*
-..*
+*
+*
+*
+*
+*
+*
+*
 
 Actually, out ELF file contain TWO headers. ELF header and program header. ELF header describe elf file, program header describe program.
 
@@ -62,17 +62,17 @@ Let's analyse program header:
 ```readelf -l asm.out```
 We get text like this:
 ![table.png](OptimizationPictures/table.png)
-..*
-..*
-..*
-..*
-..*
-..*
-..*
+*
+*
+*
+*
+*
+*
+*
 
 #Conclusion
 All you need - is just put two headers (ELF header and program header) before your program and Linux will run it!
 
-# For dipper analyse
+# For dipper analise
 https://cirosantilli.com/elf-hello-world#program-header-table
 http://www.sunshine2k.de/coding/javascript/onlineelfviewer/onlineelfviewer.html
