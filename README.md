@@ -3,8 +3,8 @@ After this tutorial you can create elf files. Tutorial takes 10 minutes
 
 # Install
 To deal with binary files you have to
-```sudo apt-get install xxd```
-```sudo apt-get install readelf```
+..*```sudo apt-get install xxd```
+..*```sudo apt-get install readelf```
 
 # Try asm
 Let's try to make an elf file from the asm
