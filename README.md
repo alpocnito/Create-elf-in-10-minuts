@@ -36,7 +36,8 @@ Do ```nasm -w+all -f elf64 -o 'simple_asm.o' 'simple.asm'; ld -o 'asm.out' 'simp
 
 ![xxd.png](images/xxd.png)
 
-Oh my god, it is very big and has a lot of usless stuf. We can rid of it with sstrip. To do it, in the asm.out repository do:
+# Oh my god
+It is very big and has a lot of useless stuf. We can rid of it with sstrip. To do it, in the asm.out repository do:
 1. ```git clone https://github.com/BR903/ELFkickers.git```
 2. ```cd ELFkickers/sstrip```
 3. ```make```
