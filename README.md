@@ -52,10 +52,9 @@ Pretty small now! Look carefully at the code. It must contain 909090 In the end 
 
 ![xxd2.png](images/xxd2.png)
 
-Code exist between this nop's isntructions. The green area it is the ELF header. 
+Code exist between this nop's instructions. The green area it is the ELF header. 
 
 So, to build programs if ELF format all we need - it is understand this format. It is not very hard.
-
 To analyse headers run: ```readelf -h asm.out```
 We get text like this:
 
