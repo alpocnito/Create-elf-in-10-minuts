@@ -50,7 +50,7 @@ Let's see the elf file now:  ```xxd asm.out```
 
 Pretty small now! Look carefully at the code. It must contain 909090 In the end (Red rectangle). It is our nop instructions!!!
 
-![xxd2.png](images/xxd1.png)
+![xxd2.png](images/xxd2.png)
 
 Code exist between this nop's isntructions. The green area it is the ELF header. 
 
