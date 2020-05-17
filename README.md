@@ -69,7 +69,7 @@ Let's analyse program header:
 ```readelf -l asm.out```
 We get text like this:
 
-![elf2.png](images/elf2.png))
+![elf2.png](images/elf2.png)
 
 The structure of program header is:
 
@@ -78,11 +78,12 @@ The structure of program header is:
 For our purposes we have to change only two parameters:
 * p_filesz 
 * p_memsz
+
 They should be equal: Headers size + Program size, where Header size = 0x80 
 
-#Conclusion
+Conclusion:
+
 All you need - is just put two headers (ELF header and program header) before your program, change p_filesz, p_memsz and Linux will run it!
 
 # STRONGLY RECOMMENDED
-## For dipper analise
 https://cirosantilli.com/elf-hello-world#program-header-table
