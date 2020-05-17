@@ -73,7 +73,7 @@ We get text like this:
 
 The structure of program header is:
 
-![pgh.png](images/pgh.png))
+![pgh.png](images/pgh.png)
 
 For our purposes we have to change only two parameters:
 * p_filesz 
@@ -81,9 +81,9 @@ For our purposes we have to change only two parameters:
 
 They should be equal: Headers size + Program size, where Header size = 0x80 
 
-Conclusion:
 
-All you need - is just put two headers (ELF header and program header) before your program, change p_filesz, p_memsz and Linux will run it!
+
+SOOOOOOOOO, all you need - is just put two headers (ELF header and program header) before your program, change p_filesz, p_memsz and Linux will run it!
 
 # STRONGLY RECOMMENDED
 https://cirosantilli.com/elf-hello-world#program-header-table
